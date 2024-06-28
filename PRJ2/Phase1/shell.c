@@ -178,6 +178,10 @@ int explain(char **args, int background, char *outputfile) {
     printf("cat {file_path} : Display the contents of the specified file.\n");
     printf("${var} : Execute the command stored in the specified variable.\n");
     printf("{command} & : Run the command in the background.\n");
+    printf("pstatus -p : List processes along with their parents, in descending order of priority.\n");
+    printf("pstatus -i : List processes based on whether they are interactive or not.\n");
+    printf("pstatus -t : List processes running on multiple threads.\n");
+    printf("sysfo : Show system information.\n");
     printf("? : Display this help message.\n");
     printf("exit : Exit the shell.\n");
     return 0;
